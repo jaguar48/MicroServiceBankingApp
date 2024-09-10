@@ -78,7 +78,7 @@ namespace MicroRabbit.Infra.Bus
             _handlers[eventName].Add(handlerType);
 
 
-            
+            StartBasicConsume<T>();
         }
        private void StartBasicConsume<T>() where T : Event
         {
